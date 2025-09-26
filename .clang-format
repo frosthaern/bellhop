@@ -1,0 +1,15 @@
+Language: Cpp
+BasedOnStyle: LLVM
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+AllowShortIfStatementsOnASingleLine: true
+AllowShortBlocksOnASingleLine: true
+AllowShortFunctionsOnASingleLine: All
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+BinPackArguments: true
+BinPackParameters: true
+SpaceInEmptyParentheses: false
+PointerAlignment: Right
+ColumnLimit: 200
