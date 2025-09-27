@@ -14,14 +14,15 @@ find_package(SQLite3 REQUIRED)
 pkg_check_modules(DBUS REQUIRED dbus-1)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-file(GLOB_RECURSE SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.c)
+# file(GLOB_RECURSE SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.c)
 include_directories(bellhop
   ${CMAKE_CURRENT_SOURCE_DIR}/include
   ${DBUS_INCLUDE_DIRS}
   ${SQLITE3_INCLUDE_DIRS}
 )
 
-add_executable(bellhop ${SOURCES})
+# add_executable(bellhop ${SOURCES})
+add_executable(bellhop src/main.c)
 target_link_libraries(bellhop PRIVATE
   ${DBUS_LIBRARIES}
   ${SQLITE3_LIBRARIES}

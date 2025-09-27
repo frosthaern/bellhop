@@ -12,4 +12,4 @@ BinPackArguments: true
 BinPackParameters: true
 SpaceInEmptyParentheses: false
 PointerAlignment: Right
-ColumnLimit: 200
+ColumnLimit: 180
