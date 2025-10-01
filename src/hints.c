@@ -10,7 +10,7 @@
  * call these functions
  */
 
-hint_t * hints_new_hint_t(hint_type_t type, void *value, char *key) {
+hint_t *hints_new_hint_t(hint_type_t type, void *value, char *key) {
   hint_t *hint = malloc(sizeof(hint_t));
   hint->type = type;
   switch (type) {

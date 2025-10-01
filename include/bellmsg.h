@@ -1,7 +1,7 @@
-#ifndef DBUS_MESSAGE_H
-#define DBUS_MESSAGE_H
-#include "hints.h"
-#include "action.h"
+#ifndef BELLMSG_H
+#define BELLMSG_H
+
+#include <action.h>
 #include <dbus/dbus.h>
 #include <hints.h>
 

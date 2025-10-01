@@ -1,8 +1,8 @@
 #ifndef HINTS_H
 #define HINTS_H
 
-#include <stdint.h>
 #include <dbus/dbus.h>
+#include <stdint.h>
 
 typedef enum {
   HINT_TYPE_STRING,
@@ -24,15 +24,10 @@ typedef struct {
   hint_value_union value;
 } hint_t;
 
-#include "hints.h"
-#include "dbus/dbus.h"
-#include <stdint.h>
-
 hint_t *hints_new_hint_t(hint_type_t type, void *value, char *key);
 void hints_new_str_hint_t(hint_t *hint, char *value, char *key);
 void hints_new_int_hint_t(hint_t *hint, dbus_uint32_t value, char *key);
 void hints_new_bool_hint_t(hint_t *hint, dbus_bool_t value, char *key);
 void hints_new_byte_hint_t(hint_t *hint, uint8_t value, char *key);
- 
 
 #endif
